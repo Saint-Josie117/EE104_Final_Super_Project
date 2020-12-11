@@ -1,0 +1,979 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Consolas'; font-size:10pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Python 3.8.5 (default, Sep  3 2020, 21:29:08) [MSC v.1916 64 bit (AMD64)]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">IPython 7.19.0 -- An enhanced Interactive Python.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">1</span><span style=" color:#00ff00;">]:</span> runfile('C:/Users/Rick.000/Downloads/Super_Project_Josie Lopez, Patrick Yao/Super_Project_Josie Lopez, Patrick Yao/Option4_1-VGG3_Increasing_Dropout.py', wdir='C:/Users/Rick.000/Downloads/Super_Project_Josie Lopez, Patrick Yao/Super_Project_Josie Lopez, Patrick Yao')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:44.471464: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:44.471464: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.635499: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.664703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.664780: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.669654: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.673886: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.675498: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.680999: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.685043: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.694963: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.695127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.695763: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705448: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x28f1dba1da0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705509: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705733: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705747: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705759: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705770: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705782: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705793: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705804: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9525 MB memory) -&gt; physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.317904: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x28f49c76550 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.317967: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 1/20</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:44.471464: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.635499: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.664703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.664780: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.669654: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.673886: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.675498: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.680999: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.685043: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.694963: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.695127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.695763: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705448: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x28f1dba1da0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705509: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705733: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705747: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705759: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705770: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705782: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705793: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705804: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9525 MB memory) -&gt; physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.317904: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x28f49c76550 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.317967: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:50.190098: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:44.471464: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.635499: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.664703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.664780: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.669654: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.673886: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.675498: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.680999: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.685043: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.694963: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.695127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.695763: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705448: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x28f1dba1da0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705509: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705733: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705747: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705759: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705770: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705782: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705793: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705804: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:47.705849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.314761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9525 MB memory) -&gt; physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.317904: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x28f49c76550 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:48.317967: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:50.190098: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:50.409998: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-10 18:30:51.158019: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Relying on driver to perform ptx compilation. </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Modify $PATH to customize ptxas location.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This message will be only logged once.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.9627 - accuracy: 0.2621 - val_loss: 1.6765 - val_accuracy: 0.3748</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 2/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.5973 - accuracy: 0.4063 - val_loss: 1.4222 - val_accuracy: 0.4779</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 3/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.4318 - accuracy: 0.4813 - val_loss: 1.2849 - val_accuracy: 0.5302</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 4/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.2996 - accuracy: 0.5257 - val_loss: 1.1119 - val_accuracy: 0.6023</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 5/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.2137 - accuracy: 0.5645 - val_loss: 1.0548 - val_accuracy: 0.6241</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 6/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.1390 - accuracy: 0.5911 - val_loss: 0.9760 - val_accuracy: 0.6504</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 7/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.0807 - accuracy: 0.6153 - val_loss: 0.9460 - val_accuracy: 0.6602</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 8/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 1.0249 - accuracy: 0.6387 - val_loss: 0.9008 - val_accuracy: 0.6829</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 9/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.9836 - accuracy: 0.6539 - val_loss: 0.8344 - val_accuracy: 0.6997</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 10/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.9416 - accuracy: 0.6685 - val_loss: 0.8453 - val_accuracy: 0.7009</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 11/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.9077 - accuracy: 0.6809 - val_loss: 0.7904 - val_accuracy: 0.7247</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 12/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.8823 - accuracy: 0.6911 - val_loss: 0.7546 - val_accuracy: 0.7370</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 13/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.8492 - accuracy: 0.7017 - val_loss: 0.7274 - val_accuracy: 0.7459</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 14/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.8258 - accuracy: 0.7126 - val_loss: 0.7068 - val_accuracy: 0.7523</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 15/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.8052 - accuracy: 0.7195 - val_loss: 0.6989 - val_accuracy: 0.7562</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 16/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.7787 - accuracy: 0.7295 - val_loss: 0.6760 - val_accuracy: 0.7669</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 17/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.7591 - accuracy: 0.7331 - val_loss: 0.6657 - val_accuracy: 0.7709</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 18/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.7399 - accuracy: 0.7416 - val_loss: 0.6512 - val_accuracy: 0.7774</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 19/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.7224 - accuracy: 0.7486 - val_loss: 0.6593 - val_accuracy: 0.7712</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 20/20</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 12s - loss: 0.7085 - accuracy: 0.7512 - val_loss: 0.6483 - val_accuracy: 0.7746</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+HikpKdja2uLn51drkIgboygK58+fJyUlBX9/f0OXI4TQM72dGlIUhQcffJCg
+oCCefPLJWtcZMWIEX3/9NYqisHPnTuzt7asn3rgRJSUlODk5SQg0Eo1Gg5OT
+kxxhCWEk9HZEsG3bNhYtWkTnzp2JiIgA4M0336zu6T5t2jSGDRtGXFwcAQEB
+WFlZsWDBgga/n4RA45L9KYTx0FsQ9OrVq9YxgMtpNBo++eQTfZVQQ0l5JRcK
+y3Czs0CrlQ85IYS4xGhaTJRVVJFVUEphWUWjbzsnJ4dPP/30hl83bNgwcnJy
+Gr0eIYS4EUYTBDbmpmg1GvJLmi4IKisr63xdXFwcbdq0afR6hBDiRrS4XkMN
+pdVqsDY3Ja+kHHfFolHPgT///POcPHmSiIgIdDodNjY2uLu7s3//fo4cOcJd
+d91FcnIyJSUlzJw5s/oKqEvtMgoKChg6dCi9evVi+/bteHp6smrVKiwtLRut
+RiGEuJZWFwSzfjrMkbS8WpeVV1ZRVlGFlZnJDQVBsIcdL98Rcs3lb731FocO
+HWL//v1s2rSJ4cOHc+jQoepLL+fPn4+joyPFxcV069aN0aNH4+TkVGMbiYmJ
+fPvtt3zxxRfcc889fPfdd9x///31rlEIIRrKaE4NAZheHCSuqNLv7JzR0dE1
+rr//8MMPCQ8Pp0ePHiQnJ5OYmHjVa/z9/auvruratStJSUl6rVEIIS5pdUcE
+df3lDnA8Ix+diYZ2zjZ6q8Ha2rr6+02bNvHbb7+xY8cOrKys6Nu3b63X55ub
+m1d/b2JiQnFxsd7qE0KIyxnVEQGAnaUphWWVVDbiUYGtrS35+fm1LsvNzcXB
+wQErKyuOHTvGzp07G+19hRCiMbS6I4LrsTXXkZlfSkFpBfaWjdNHx8nJiVtv
+vZXQ0FAsLS1xdXWtXjZkyBDmzp1LWFgYnTp1okePHo3ynkII0ViMLgiszE0w
+0WjILylvtCAAWLJkSa3Pm5ubs3bt2lqXXRoHaNu2LYcOHap+/umnn260uoQQ
+4nqM7tSQVqPBxsKU/JKK6975LIQQxsDoggDA1kJHeWUVJeV13/AlhBDGwEiD
+QD0jpo+7jIUQoqUxyiDQmWixNDMhT4JACCGMMwhAPT1UVFZBRWWVoUsRQgiD
+MtogsLt0eqhUjgqEEMbNaIPAUmeCqVZLfnHTB4GNjXpXc1paGmPGjKl1nb59
++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
++gx4FcztYM2TDZrv+HJ3R3mz/KFbqKhUGP3Zdn4+mNZIRQohjE292lCHh4fz
+66+/Vk8yn5mZyYABAzhw4IDeC7xSs2xDfSP2LoLVM9Sbzrrcf9ObO5dfwvRv
+9pJwOpvpfdvz9KBOmGg1jVCoEKI1uek21FVVVdUhAODk5ETVTf5Fa7Qixqst
+q9e/CEU3PyOZi60F307twbhoHz7bdJIHv9pDbrEM5Ash6q9eQTBkyBAGDx7M
+woULWbhwIcOHD2fYsGH6rq110mph+HtQmge/vtQomzQz1TJ7VGfeGBnKH4lZ
+3PXJNhLPyuW9Qoj6qfcMZd999x3btm1DURRiYmIYOXKkvmurVYs/NXTJry/B
+tg/ggXXge0ujbXZP0gWmf7OXkvJK3rsnnEEhbo22bSFEy1XXZ6dMVWkoZYXw
+SXcwt4WHtqiT2zSS9NxiHlqUwMGUXB4f0IHHbuuAVsYNhDBqDR4jsLW1xc7O
+7qrHpefFTTCzhqFvw7kjsPPTRt20u70lyx+6hVGRnrz/WyLTvkmgoLSiUd9D
+CNF61BkE+fn55OXlXfW49Ly4SYHDoNNw2PQW5Jxp1E1b6Ex49+5wXro9mA3H
+zjHyk20kZTXsrmYhROumt0kFJk+ejIuLC6GhobUuX7x4MWFhYYSFhdGzZ0+D
+XIraLAydo35d2/gzvmk0Gib38ufrydFkFZQy4uM/iPszvdHfRwjRsuktCCZN
+msS6deuuudzf35/Nmzdz8OBBXnzxRWJjY/VVSvPWxhv6Pg/H18CxOL28xa0B
+bVk9oxf+ba15ePFenlp+gPwSucRUCKHSWxDExMTg6Oh4zeU9e/bEwcEBgB49
+epCSYsQdNXs8DC7BsPbZBjelux5vRytWTu/JY/078MO+FIZ+sJU9STd/H4MQ
+ouVrFvNNfvnllwwdOvSay+fNm0dUVBRRUVFkZrbCyVlMdHD7/4PcZNg8R29v
+ozPR8uTAjqyY1hOtRsO9n+/gnV+OUVYhNwcKYcwMHgQbN27kyy+/ZM6ca38A
+xsbGEh8fT3x8PM7Ozk1YXRPy6QFd/gU7PrmppnT10dXXgbiZvbm7qzefbDzJ
+qM+28de5Ar2+pxCi+TJoEBw8eJApU6awatUqnJycDFlK8zCw8ZrSXY+NuSlz
+xoTx+b+6kppdzO0fbeXrHUm0sNtKhBCNwGBBcObMGUaNGsWiRYvo2LGjocpo
+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
+gvp0Pa3POk0hKSmJffv20b1796uW7dixg/DwcIYOHcrhw4ebtC6NRsOgQYPo
+2rUr8+bNu2p5c9l/S5cuveb/fIbcf5ecPXsWd3d1onJ3d/da59toLvty/vz5
+DB06tNZl1/t90KePP/6YsLAwJk+eXOupteaw/7Zu3YqrqysdOnSodbkh9199
+tbrJ65V6dD2tzzr6VlBQwOjRo3n//fexs7OrsSwyMpLTp09jY2NDXFwcd911
+F4mJiU1W27Zt2/Dw8ODcuXMMHDiQwMBAYmJiqpc3h/1XVlbG6tWrmT179lXL
+DL3/bkRz2JdvvPEGpqamjB8/vtbl1/t90Jfp06fz4osvotFoePHFF3nqqaeY
+P39+jXWaw/779ttv6zwaMNT+uxGt7oigvl1Pr7eOPpWXlzN69GjGjx/PqFGj
+rlpuZ2eHjY0NoLbpKC8vv6keSzfq0r5wcXFh5MiR7N69u8ZyQ+8/gLVr1xIZ
+GYmrq+tVywy9/y5xdXWtPmWWnp5e68RLht6XX331FT///DOLFy++5gfo9X4f
+9MXV1RUTExO0Wi1Tp06t9X0Nvf8qKir4/vvvuffee6+5jqH2341odUFwedfT
+srIyli5dyogRI2qsM2LECL7++msURWHnzp3Y29tXH8Lrm6IoPPjggwQFBfHk
+k0/Wuk5GRkb1Xzq7d++mqqoKJyenJqmvsLCQ/Pz86u/Xr19/VSNAQ+6/S+r6
+K8yQ++9yI0aM4KuvvgLUD9w777zzqnXq8/uqL+vWrWPOnDmsXr0aKyurWtep
+z++Dvlw+7vTDDz/U+r6G3H8Av/32G4GBgXh5edW63JD774YYaJBar9asWaN0
+6NBBadeunfL6668riqIon332mfLZZ58piqIoVVVVysMPP6y0a9dOCQ0NVfbs
+2dNktW3dulUBlM6dOyvh4eFKeHi4smbNmhr1ffTRR0pwcLASFhamdO/eXdm2
+bVuT1Xfy5EklLCxMCQsLU4KDg5vd/lMURSksLFQcHR2VnJyc6ucMvf/Gjh2r
+uLm5Kaampoqnp6fyv//9T8nKylJuu+02JSAgQLntttuU8+fPK4qiKKmpqcrQ
+oUOrX1vb72tT1Ne+fXvFy8ur+vfwoYceuqq+a/0+NEV9999/vxIaGqp07txZ
+ueOOO5S0tLSr6lMUw+0/RVGUiRMnVv/eXWKI/XezpMWEEEIYuVZ3akgIIcSN
+kSAQQggjJ0EghBBGToJACCGMnASBEEIYOQkCIZrQpk2buP322w1dhhA1SBAI
+IYSRkyAQohbffPMN0dHRRERE8NBDD1FZWYmNjQ1PPfUUkZGR9O/fn8zMTAD2
+799Pjx49qvv6X2qO9tdffzFgwADCw8OJjIzk5MmTgNpnasyYMQQGBjJ+/Pha
+++UI0ZQkCIS4wtGjR1m2bBnbtm1j//79mJiYsHjxYgoLC4mMjGTv3r306dOH
+WbNmATBhwgTmzJnDwYMH6dy5c/Xz48eP55FHHuHAgQNs3769ug3Hvn37eP/9
+9zly5Ah///0327ZtM9i/VQhohd1HhbhZGzZsICEhgW7dugFQXFyMi4sLWq22
+urnY/fffz6hRo8jNzSUnJ4c+ffoA6rwDd999N/n5+aSmpjJy5EgALCwsqrcf
+HR1d3ZsmIiKCpKQkevUhC4IxAAABGUlEQVTq1ZT/RCFqkCAQ4gqKojBx4sSr
+Wly/9tprNX6uq91xXad7zM3Nq783MTGhoqKigZUK0Tjk1JAQV+jfvz8rV66s
+nkjmwoULnD59mqqqKlauXAnAkiVL6NWrF/b29jg4OLB161YAFi1aRJ8+fbCz
+s8PLy6t6VrLS0lKKiooM8w8S4jrkiECIKwQHB/P6668zaNAgqqqq0Ol0fPLJ
+J1hbW3P48GG6du2Kvb09y5YtA9QW09OmTaOoqIh27dqxYMECQA2Fhx56iJde
+egmdTseKFSsM+c8S4pqk+6gQ9WRjY0NBQYGhyxCi0cmpISGEMHJyRCCEEEZO
+jgiEEMLISRAIIYSRkyAQQggjJ0EghBBGToJACCGM3P8HcVoXXIcDsfwAAAAA
+SUVORK5CYII=
+" /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&gt; 77.460</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAXQAAAEICAYAAABPgw/pAAAACXBIWXMAAAsT
+AAALEwEAmpwYAAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1jPWM9JRyCgpKSi20tfPhSvQyy9K1wcAqR8RJw7thUsAACAASURBVHic
+7J13eFVV1offm0Z6L6QRCAktkEQSBFSKFSkyCI6gCDiojAXEsWD77JVhdHDE
+gQFHVBDLOAIjEBRROoJBEOk1JCRAChDS6/7+2MlNbnoguTdlvc+zn9P2OWfd
+nXN/d2edtdc2KKUUgiAIQqvHytIGCIIgCE2DCLogCEIbQQRdEAShjSCCLgiC
+0EYQQRcEQWgjiKALgiC0EUTQBUEQ2ggi6MJls2zZMmJjY3F2dsbf35/hw4ez
+ZcsWi9nTuXNnHBwccHZ2Npbp06c36NyhQ4fy4YcfNrOFDePjjz/muuuus7QZ
+QivExtIGCK2Td999l7fffpsFCxYwbNgw7OzsWLt2LStXrqxRjIqLi7Gxaf7H
+7dtvv+Wmm25q8uuay35BuBKkhy40mszMTF588UU++OADxo4di5OTE7a2ttx2
+223MmTMHgJdffpk77riDe+65B1dXVz7++GNSUlIYPXo0np6ehIWFsWjRIuM1
+d+7cSWxsLK6urvj5+fH4448DkJ+fzz333IOXlxfu7u7069ePc+fONdrm8l7v
+k08+iYeHB126dCEuLg6A559/ns2bNzN9+nSTXr3BYOCDDz4gPDyc8PBwABYt
+WkRYWBienp6MHj2alJQU4z0MBgP/+Mc/CA0Nxdvbm6eeeorS0lIKCgrw9PTk
+999/N9ZNTU3FwcGBtLS0Rn2Obdu20a9fP9zc3OjXrx/btm0z+YyhoaG4uLjQ
+pUsXPvvsMwCOHTvGkCFDcHNzw9vbm/Hjxze6/YRWghKERhIXF6esra1VUVFR
+rXVeeuklZWNjo5YvX65KSkpUbm6uGjx4sHrooYdUXl6e2r17t/L29lY//PCD
+UkqpAQMGqE8//VQppVRWVpbavn27UkqpBQsWqFGjRqmcnBxVXFys4uPjVWZm
+Zo33DAkJUevWravx2OLFi5WNjY1auHChKi4uVv/85z+Vv7+/Ki0tVUopNWTI
+ELVo0SKTcwB10003qYyMDJWbm6vWr1+vvLy81K5du1R+fr6aPn26GjRokEn9
+oUOHqoyMDHXq1CkVHh5uvOZDDz2kZs2aZaw7d+5cNWrUqFptvfbaa6vtz8jI
+UO7u7urTTz9VRUVFatmyZcrd3V2lp6er7Oxs5eLiog4dOqSUUiolJUXt27dP
+KaXUhAkT1Ouvv65KSkpUXl6e2rx5c433FVo/0kMXGk1GRgbe3t71uiAGDhzI
+mDFjsLKyIj09nS1btjB79mzs7e2Jjo7m/vvvZ8mSJQDY2tpy7Ngx0tPTcXZ2
+ZsCAAcb9GRkZHDt2DGtra2JiYnB1da31nmPGjMHd3d1YKv8XEBISwgMPPIC1
+tTVTpkzhzJkz9fb2n332WTw9PXFwcOCzzz5j6tSp9O3blw4dOvDWW2+xfft2
+EhISjPWffvppPD096dSpE4899hiff/45AFOmTGHZsmWUlpYCsGTJEiZNmlTn
+vauyevVqwsPDmTRpEjY2Ntx111306NGDb7/9FgArKyv27dtHXl4e/v7+RERE
+GNvw1KlTpKSkYG9vL/75NowIutBovLy8SE9Pp7i4uM56wcHBxvWUlBQ8PT1x
+cXEx7gsJCSE5ORmAf//73xw5coQePXrQr18/Vq1aBcCkSZMYNmwYEyZMICAg
+gFmzZlFUVFTrPVesWMHFixeN5YEHHjAe69ixo3Hd0dERgOzs7EZ9hpCQEOO2
+s7MzXl5exs9QtX5ISIjRJdO/f3+cnJzYuHEjhw4d4tixY4wePbrOe1el6v3L
+75GcnIyTkxNffvklCxYswN/fn5EjR3Lo0CEA/vrXv6KU4uqrryYiIoKPPvqo
+UfcVWg8i6EKjGThwIPb29qxYsaLOegaDwbgeEBDA+fPnycrKMu5LTEwkMDAQ
+gPDwcD7//HNSU1N5+umnueOOO8jJycHW1paXXnqJAwcOsG3bNlatWsWnn37a
+5J+psq11fYZTp04Zt3NycsjIyDB+BoCkpCTjemJiIgEBAcbtKVOmsHTpUpYs
+WcIdd9yBvb19o2ysev/ye5Tff9iwYaxbt44zZ87Qo0cP449Zx44dWbRoESkp
+KfzrX//i4Ycf5tixY426t9A6EEEXGo2bmxuvvvoqjzzyCCtWrCA3N5eioiLi
+4uKYNWtWjecEBwdzzTXX8Oyzz5Kfn8/evXv597//zcSJEwFYunQpaWlpWFlZ
+4e7uDoC1tTU//fQTv//+OyUlJbi6umJra4u1tXWTfyY/Pz9OnDhRZ527776b
+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
+cFvZXb6Pv6QQSnLqT+PsGXP5n6cORNAFQWjbGKy0K8bOTadnaE6s7XSx82je
++9RCOx0gKwiC0PYQQRcEQWgjWCwfure3N507d76sc9PS0vDxuQKfWjPT0u2D
+lm+j2HdliH1XRku2LyEhgfT0mkcLW0zQr4SWPjlGS7cPWr6NYt+VIfZdGS3d
+vtoQl4sgCEIbQQRdEAShjWD98ssvv2xpIy6HmJjmieNsKlq6fdDybRT7rgyx
+78po6fbVRKv0oQvm5eWXX+bYsWMsXbq0/sqXQUREBB988AFDhw5FKcXUqVNZ
++nPkBwAAIABJREFUsWIF4eHhvPPOO9x///0cPny4Se+ZmJhIr169yMzMxLql
+JbUWhMtEXC4CAMuWLSM2NhZnZ2f8/f0ZPnw4W7ZsMcu99+/fz9ChQwHYsmUL
+69at4/Tp0+zcuZNBgwY1iZh37tyZH374wbjdqVMnsrOzm03MlVKEhobSq1ev
+Zrm+INSECLrAu+++y2OPPcZzzz3HuXPnSExM5OGHH2blypVmt+XUqVN07twZ
+Jycns9+7Kdm0aROpqamcOHGCX375xaz3Li4urr+S0DZRLZi4uDjVrVs31bVr
+V/XWW29VO15aWqpmzJihunbtqvr06aN27dplNtsSExPV0KFDVY8ePVSvXr3U
+3Llzq9X56aeflKurq4qKilJRUVHqlVdeMZt9SikVEhKievfuraKiolRMTEy1
+46WlpWratGnKYDCoTp061dp+L730kpo4caJx+4477lB+fn7K1dVVDRo0SO3b
+t894bPXq1apnz57K2dlZBQQEqDlz5iillEpLS1MjR45Ubm5uysPDQ8XExKjI
+yEgVFRWlbG1tlYODgxo/frzq0KGDsrKyUk5OTmry5MnK0dFR2draGtsvMTFR
+3X777crb21t5enqqRx55RCml1LFjx9T111+vPD09lZeXl7r77rvVhQsXlFJK
+3XPPPcpgMCh7e3vl5OSkZs+erU6ePKkAVVRUpJRSKjk5Wd12223Kzs5OWVlZ
+KX9/f+NnmjVrlvL19VUuLi7K2tpade/eXf3yyy/V2qny8xoTE6Puvvtudfvt
+txttLGffvn3qpptuUh4eHsrX11e98cYbSimliouL1RtvvKFCQ0OVs7Oz6tu3
+r0pMTDSx9U9/+pPy8fFRjo6OatGiRUoppW699VZlb2+vvLy8lK2trXriiSdq
+bI/g4GDj89CnT59q7Zifn688PDzU3r17jbaeO3dO2dvbq9TU1NoeMxPK7YuI
+iDB5fgICAozfg9WrV9d4bn3f96agJvvuvPNOo20hISEqKiqqxnPr+z61BFqs
+oBcXF6vQ0FB1/PhxVVBQoCIjI9X+/ftN6qxevVrdeuutqrS0VG3fvl1dffXV
+ZrMvJSXFKICXLl1S4eHh1ez76aef1MiRI81mU1VCQkJUWlparcdXr16tYmJi
+lLW1tdq8eXOt7VdV0P/973+rS5cuqfz8fDVz5kyTL0DHjh3Vpk2blFJKnT9/
+3thGzzzzjPrzn/+sCgsLVWFhodq0aZMqLS012unu7q4SEhLU4sWL1bXXXquU
+0u03YMAAFRgYqJTSz0RkZKR67LHHVHZ2tsrLy1ObN29WSil19OhR9f3336v8
+/HyVmpqqBg0apGbOnGnSFuvWrTNuVxX0wYMHq4ceekh9//33atmyZcra2lr9
+8MMPSimlrrnmGmVjY6NWr16t3njjDdW/f3/Vv39/kzaq/LxeuHBBWVlZqfnz
+56uvv/5aeXl5qYKCAqWUflY6duyo/va3v6m8vDx16dIl9fPPPyullPrrX/+q
+evfurQ4dOqRKS0vVnj17VHp6uomtGzduVLt27TIR9CeeeEJZW1urf/zjH+rJ
+J59Uf/nLX2psDxcXF5WWllZnOz700ENq1qxZxs81d+5cNWrUqFqfoaqU21dV
+0Mt/2GujId/3pqAm+yrz+OOP19rxqu/71BJosYK+bds2dcsttxi333zzTfXm
+m2+a1Jk2bZpatmyZcbtbt24qJSXFbDZWZvTo0er777832dfSBX3atGnq4Ycf
+Vn5+fkqp2tuvqqBX5sKFCwpQFy9eVEopFRwcrBYsWKAyMzNN6r3wwgtq9OjR
+6ujRo9Wu4efnp3r16qWUUnUK+rZt25S3t7dRhOti+fLlKjo62rhdl6AnJiYq
+KysrdenSJeMxb29vNWXKFKWUUp6enuq6665TSukf8pCQEGVvb29yv8rP65Il
+S5Sjo6N67bXXVH5+vnJzc1PffPONUkqpZcuWmdhVmW7duqkVK1ZU21/1x+fk
+yZMmgr548WIVHByslFLqm2++UXfffXeN7WFra6vS0tLqbMeff/5ZBQUFqZKS
+EqWUUjExMerLL7+s0d7aOHnyZKMFvSHf96aiqn3llJaWqqCgIHXkyJEaz2sN
+gt5ifejJyckEV5r9NSgoiOTk5EbXMQcJCQns3r2b/v37Vzu2fft2oqKiGD58
+OPv37zerXQaDgVtuuYWYmBgWLlxY7XhycjKhoaGkp6dTXFzcoPYrKSnhmWee
+oWvXrri6uhrTN5QPRf7vf//LmjVrCAkJYciQIWzfvh2Ap556irCwMG655RZC
+Q0N5++23jdfMycnh+uuvr/F++/fvJzU1leHDh7Nt2zZCQkKwsameJDQ1NZUJ
+EyYQGBiIq6sr99xzT63Do6uSkpKCp6cnLi4uxn22trbGtsjJySEkRGfp8/f3
+5/z58+Tn55v4qis/i5988gkDBw7k7NmzdOjQgbFjx/LJJ58AkJSURNeuXWu0
+o65j9VF+748++ojhw4fX2B6lpaXccsstTJw4EUdHxxrbsX///jg5ObFx40YO
+HTrEsWPHGD169GXZVJl58+YRGRnJ1KlTuXDhQrXjLeG7vHnzZvz8/AgPD6/x
+eH3fp5ZAixV0VUM0paFKjuKG1GlusrOzGTduHHPnzsXV1dXkWN++fTl16hS/
+/fYbM2bMYMyYMWa1bevWrfz666/ExcXxwQcfsGnTJpPjSikiIiKwt7dnxYoV
+QP3tt2zZMlauXMkPP/xAZmYmCQkJxmsB9OvXj5UrV5KamsqYMWO48847AXBx
+ceGdd97hxIkTfPvtt7z77rusX7+ewsJCcnNzGTJkSLV79e3bly+//BJfX19m
+zJjB3//+dxITE2t86ffss89iMBjYu3cvly5dYunSpSbPR12fKyAggPPnz5OV
+lWXcV1RURGBgYJ1tUZnye50+fZoff/yRbdu2sXjxYjp27MjXX3/NmjVrSE9P
+Jzg4mOPHj9d4jdqOlb8gzs2tmM6tahsYDAbeeOMNbGxsmDhxYo3t4ePjw6+/
+/sr7779PcnIyP/74Y412TJkyhaVLl7JkyRLuuOMO7O3tG9wONfHQQw9x/Phx
+9uzZg7+/P0888US1Oi3hu/z5559z11131Xq8vu9TS6DFCnpQUBBJSUnG7dOn
+TxMQENDoOs1JUVER48aNY+LEiYwdO7bacVdXV5ydnQEYMWIERUVFDe41NgXl
+beHr68vtt9/Ozp07TY4HBQVx4cIFXn31VR555BEOHTqEu7s7RUVFxMXFMWvW
+rGrXzMrKokOHDnh5eZGbm8tzzz1nPFZYWMhnn31GZmYmtra2uLq6GsMCV61a
+xbFjx1BKGfdbW1sTFxeHnZ0dHh7V80e7urri4OAA6PaztrbG19eXZ555hpyc
+HPLz89m6davRLmdnZ9zd3UlOTmbOnDkm1/Lz8+PEiRM1tlNwcDDXXHMNzz77
+LPn5+Rw8eJALFy4wceJEQAtqXl4eAGfOnMHb27vaNcqfxSVLltCtWzcee+wx
+Zs6cyZ49ezhy5AhBQUF8/vnnjBo1irNnzzJ37lwKCgrIyspix44dANx///28
+8MILHD16FKUUe/fuJSMjAx8fHwIDA1m6dCklJSV89dVXFBaazoyTmprKqlWr
++OyzzzAYDDW2R/nf4tZbb8Xb25tXXnmlWjsCTJo0ieXLl7N06VImT55cY5s1
+Bj8/P6ytrbGysuKBBx6o9hxWbr9yzP1dLi4u5ptvvmH8+PG11qnv+9QisJiz
+px6KiopUly5d1IkTJ4wvSSpHUyil1KpVq0xeivbr189s9pWWlqpJkyaZvHir
+ypkzZ4wv/nbs2KGCg4ON281Ndna20SecnZ2tBg4cqOLi4kzqVG6/l19+WTk6
+OipHR0fl5+enRowYobZu3aqUMvWhZ2VlqdGjRytnZ2fVqVMn9cknnyhAHT16
+VBUUFKhhw4Ypd3d35eLiomJjY40v2959910VEhKiHB0dVWBgoHr11VeVUkqN
+Hz9eeXl5Gf3blX3oZ86cUT/++KMKDAw0tl9CQoL6wx/+YIzemDFjhlJKR470
+7dtXOTk5qaioKPW3v/3N6HtXSqkVK1ao4OBg5ebmpubMmVPNL52UlKRGjhyp
+PDw8VKdOnUyiXAYOHGj0e7/11ltq2rRpJucqVfG8hoaGqnfffbfa8zp79mxj
+ZMTvv/+ubrjhBuXu7q78/PyMER3FxcXqtddeU507d1bOzs4qNjZWJSUlKaWU
+WrNmjercubNyc3NT9913n4kP/fHHH1cODg4mkShV2+PNN99UAQEBxuehb9++
+auDAgdXasZwbb7xRhYSEXNbzWtVHXfm9zLvvvqvGjx9f7ZyGfN+bipp86HFx
+cWrw4MG1ntOQ71NLoMUKulI6CiM8PFyFhoaq119/XSml1Pz589X8+fOVUlpU
+H374YRUaGqp69+5dYyhZc7F582YFqD59+piEY1W27/3331e9evVSkZGRqn//
+/kaBNAfHjx9XkZGRKjIyUvXq1avFtZ9SSuXk5ChPT0/jC9Wq9lmi/SZMmKA6
+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
+6wy9ZjWo6sGD8MYbMGGCiLkgCG2ftjX0vxKlpToNrpMTzJ1raWsEQRCan9bX
+Q28gixbpWYc++gj8/CxtjSAIQvPTJnvoyckwa5aepOLeey1tjSAIgnlok4I+
+YwYUFsK//iVD+wVBaD+0OZfL8uW6vP02hIVZ2hpBEATz0aZ66JmZenh/VJRO
+vCUIgtCeaFM99Gee0elx//c/Gd4vCEL7o8300LdsgQULYOZMiI21tDWCIAjm
+p00Ievnw/pAQPTJUEAShPdImXC5vvQWHDkFcHDg7W9oaQRAEy9Dqe+gHDsCb
+b8Ldd8Ott1raGkEQBMvRqgW9tFS7Wlxc4O9/t7Q1giAIlqVVu1wWLNC5zj/+
+GMw9lakgCEJLo9X20E+f1mGKN90Ekydb2hpBEATL0yoFXSmYPh2Ki3UvXYb3
+C4IgtFKXyzffwMqVMHs2dO1qaWsEQRBaBq2uh37xou6dR0fL8H5BEITKtLoe
++rffQloarFoFNq3OekEQhOaj1fXQJ02CI0cgJsbSlgiCILQsWp2gA4SGWtoC
+QRCElkerFHRBEAShOiLogiAIbQSDUkpZ4sbe3t507tz5ss5NS0vDx8enaQ1q
+Qlq6fdDybRT7rgyx78poyfYlJCSQnp5e4zGLCfqVEBsbS3x8vKXNqJWWbh+0
+fBvFvitD7LsyWrp9tSEuF0EQhDaCCLogCEIbwfrll19+2dJGXA4xLTwQvaXb
+By3fRrHvyhD7royWbl9NtEofuiAIglAdcbkIgiC0EUTQBUEQ2ggtWtDXrl1L
+9+7dCQsL4+233652XCnFo48+SlhYGJGRkfz6669msy0pKYnrr7+enj17EhER
+wXvvvVetzoYNG3BzcyM6Opro6GheffVVs9kH0LlzZ/r06UN0dDSxsbHVjluy
+/Q4fPmxsl+joaFxdXZk7d65JHUu039SpU/H19aV3797GfefPn+fmm28mPDyc
+m2++mQsXLtR4bn3Pa3PZ99RTT9GjRw8iIyO5/fbbuXjxYo3n1vc8NJd9L7/8
+MoGBgca/45o1a2o811LtN378eKNtnTt3Jjo6usZzzdF+V4xqoRQXF6vQ0FB1
+/PhxVVBQoCIjI9X+/ftN6qxevVrdeuutqrS0VG3fvl1dffXVZrMvJSVF7dq1
+Syml1KVLl1R4eHg1+3766Sc1cuRIs9lUlZCQEJWWllbrcUu2X2WKi4uVn5+f
+SkhIMNlvifbbuHGj2rVrl4qIiDDue+qpp9Rbb72llFLqrbfeUrNmzap2XkOe
+1+ay77vvvlNFRUVKKaVmzZpVo31K1f88NJd9L730kpozZ06d51my/Srz+OOP
+q1deeaXGY+ZovyulxfbQd+7cSVhYGKGhodjZ2TFhwgRWrlxpUmflypVMnjwZ
+g8HAgAEDuHjxImfOnDGLff7+/vTt2xcAFxcXevbsSXJyslnu3VRYsv0qs379
+erp27UpISIjZ712VwYMH4+npabJv5cqVTJkyBYApU6awYsWKauc15HltLvtu
+ueUWbMpySQ8YMIDTp083+X0bSk32NQRLtl85Sim++uor7rrrria/r7losYKe
+nJxMcHCwcTsoKKiaYDakjjlISEhg9+7d9O/fv9qx7du3ExUVxfDhw9m/f79Z
+7TIYDNxyyy3ExMSwcOHCasdbSvt98cUXtX6JLNl+5Zw7dw5/f39A/5CnpqZW
+q9NS2vKjjz5i+PDhNR6r73loTubNm0dkZCRTp06t0WXVEtpv8+bN+Pn5ER4e
+XuNxS7ZfQ2mxU0SoGqIpDVUmD21IneYmOzv7/9u7f5dk4jgO4O/KKcSgwAu7
+yQpM9AQh2hqEhoKuHw4FBg0RUePT7FZEW9DgEoFB1FQgWRFtIYT9CRIR/SQK
+gnDR8P0MDx6JWsmDnsjnNanfr9yHNx8+nHeoCAaD2NjYgM1mK1jz+/24vb2F
+1WrF8fExxsfHkUqlalZbIpGAw+HAy8sLhoaG4HK5MDg4aKzXQ36ZTAaxWAxr
+a2tFa2bnV4l6yHJ1dRUWiwWhUKjk+k/9UC2Li4sIh8NoampCOBzG8vIytre3
+C/bUQ357e3vfnp2blV8l6vYMXVVV3N3dGc/v7+/hcDgq3lNN2WwWwWAQoVAI
+k5OTRes2mw1WqxUAMDIygmw2W/ZHdaohn4XdbsfExASSyWTButn5AcDJyQn8
+fj8URSlaMzu/PEVRjEtRT09PsNvtRXvMzjIajeLo6Ai7u7tlB+FP/VAtiqKg
+paUFzc3NmJ+fL3lcs/P7/PzEwcEBpqamyu4xK79K1O1A7+/vRyqVws3NDTKZ
+DPb396HresEeXdexs7MDkri8vERbW5vx0bjaSGJubg59fX34U+bPTZ+fn40z
+j2QyiVwuh46OjprUl06n8fHxYTw+OzsruLMPmJtf3ndnRWbm95Wu64hGowD+
+Dc6xsbGiPb/p12o5PT3F+vo6YrEYWltbS+75TT9Uy9f7MoeHhyWPa2Z+AHB+
+fg6XywVVVUuum5lfRUy6Gfsr8Xicvb29dDqdXFlZIUlGIhFGIhGSZC6X49LS
+Ep1OJz0eD6+urmpW28XFBQHQ6/XS5/PR5/MxHo8X1Le5uUm3201N0zgwMMBE
+IlGz+q6vr6lpGjVNo9vtrrv8SDKdTrO9vZ3v7+/Ga2bnNz09zc7OTlosFnZ1
+dXFra4uvr68MBALs6elhIBDg29sbSfLh4YHDw8PGe0v1ay3q6+7upqqqRh8u
+LCwU1VeuH2pR38zMDD0eD71eL0dHR/n4+FhUH2lefiQ5Oztr9F2eGfn9L/nq
+vxBCNIi6veQihBCiMjLQhRCiQchAF0KIBiEDXQghGoQMdCGEaBAy0IUQokHI
+QBdCiAbxFz35TKrXEkRKAAAAAElFTkSuQmCC
+" /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">running time is 242.30304288864136 seconds</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">2</span><span style=" color:#00ff00;">]:</span> </p></body></html>

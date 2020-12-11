@@ -1,0 +1,563 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Consolas'; font-size:10pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Python 3.8.5 (default, Sep  3 2020, 21:29:08) [MSC v.1916 64 bit (AMD64)]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">IPython 7.19.0 -- An enhanced Interactive Python.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">1</span><span style=" color:#00ff00;">]:</span> runfile('C:/Users/Rick.000/Downloads/Super_Project_Josie Lopez, Patrick Yao/Super_Project_Josie Lopez, Patrick Yao/VGG3_Weight_Decay.py', wdir='C:/Users/Rick.000/Downloads/Super_Project_Josie Lopez, Patrick Yao/Super_Project_Josie Lopez, Patrick Yao')</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:43.305457: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:43.305457: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.201217: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223151: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.230137: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.234404: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.235903: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.240977: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.243715: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.260942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261572: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270643: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1be30c39930 initialized for platform Host (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270700: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270892: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270905: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270917: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270930: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270953: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270965: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.271039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:43.305457: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.201217: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223151: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.230137: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.234404: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.235903: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.240977: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.243715: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.260942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261572: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270643: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1be30c39930 initialized for platform Host (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270700: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270892: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270905: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270917: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270930: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270953: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270965: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.271039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9525 MB memory) -&gt; physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.809135: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1be5c475bd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.809165: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 1/10</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:43.305457: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.201217: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223151: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.230137: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.234404: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.235903: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.240977: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.243715: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.260942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261572: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270643: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1be30c39930 initialized for platform Host (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270700: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270892: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270905: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270917: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270930: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270953: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270965: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.271039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9525 MB memory) -&gt; physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.809135: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1be5c475bd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.809165: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:48.466054: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:43.305457: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.201217: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.223151: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.230137: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.234404: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.235903: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.240977: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.243715: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.260942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.261572: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270643: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1be30c39930 initialized for platform Host (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270700: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pciBusID: 0000:07:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">coreClock: 1.6325GHz coreCount: 28 deviceMemorySize: 11.00GiB deviceMemoryBandwidth: 451.17GiB/s</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270892: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270905: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270917: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270930: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270953: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.270965: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.271039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.806384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9525 MB memory) -&gt; physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.809135: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1be5c475bd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:46.809165: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:48.466054: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:48.647678: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2020-12-06 10:25:49.269918: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Relying on driver to perform ptx compilation. </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Modify $PATH to customize ptxas location.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This message will be only logged once.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 2.6700 - accuracy: 0.4338 - val_loss: 2.3707 - val_accuracy: 0.5206</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 2/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 2.1592 - accuracy: 0.5869 - val_loss: 2.0186 - val_accuracy: 0.6227</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 3/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 1.8676 - accuracy: 0.6623 - val_loss: 1.8625 - val_accuracy: 0.6505</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 4/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 1.6570 - accuracy: 0.7112 - val_loss: 1.6735 - val_accuracy: 0.6963</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 5/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 1.4874 - accuracy: 0.7469 - val_loss: 1.5933 - val_accuracy: 0.7053</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 6/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 1.3512 - accuracy: 0.7771 - val_loss: 1.4750 - val_accuracy: 0.7322</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 7/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 1.2317 - accuracy: 0.8031 - val_loss: 1.3634 - val_accuracy: 0.7559</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 8/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 1.1288 - accuracy: 0.8230 - val_loss: 1.3723 - val_accuracy: 0.7429</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 9/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 1.0451 - accuracy: 0.8423 - val_loss: 1.3519 - val_accuracy: 0.7454</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Epoch 10/10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">3125/3125 - 10s - loss: 0.9664 - accuracy: 0.8602 - val_loss: 1.3143 - val_accuracy: 0.7509</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&gt; 75.090</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAXQAAAEICAYAAABPgw/pAAAACXBIWXMAAAsT
+AAALEwEAmpwYAAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1jPWM9JRyCgpKSi20tfPhSvQyy9K1wcAqR8RJw7thUsAACAASURBVHic
+7d15XJVl/v/x12ERZEdABdkFFXAhxNRyq1xyiUqtsdG01BzN5mtfJ8umX03N
+NO012jfLsRorTW2mRVPUySXTXLMwwxVTBCEVVEA22a7fH5ecw2EVBQ4HPs/H
+434czjn3Oedz7uzNxXVf93UZlFIKIYQQVs/G0gUIIYRoGBLoQgjRQkigCyFE
+CyGBLoQQLYQEuhBCtBAS6EII0UJIoAshRAshgS6u24oVK4iNjcXFxQVfX19G
+jhzJ999/b7F6goODadu2LS4uLsbtscceu6bXDhkyhA8++KCRK7w2H330EQMG
+DLB0GcIK2Vm6AGGd3nrrLV555RUWL17MiBEjaNOmDRs3bmTNmjXVhlFJSQl2
+do3/z23t2rUMHTq0wd+3qeoX4kZIC13UW3Z2Ns899xyLFi1i7NixODs7Y29v
+z1133cXrr78OwPPPP8/48eOZNGkSbm5ufPTRR6SnpxMXF0e7du0ICwvj/fff
+N77nvn37iI2Nxc3NjQ4dOjB37lwACgsLmTRpEl5eXnh4eNCnTx/OnTtX75rL
+W71PPPEEnp6ehISEsGHDBgCeeeYZduzYwWOPPWbWqjcYDCxatIjw8HDCw8MB
+eP/99wkLC6Ndu3bExcWRnp5u/AyDwcDbb79NaGgo3t7ezJs3j7KyMq5cuUK7
+du345ZdfjPueP3+etm3bkpGRUa/vsWvXLvr06YO7uzt9+vRh165dZt8xNDQU
+V1dXQkJC+PTTTwE4ceIEgwcPxt3dHW9vb373u9/V+/gJK6GEqKcNGzYoW1tb
+VVxcXOM+f/nLX5SdnZ366quvVGlpqcrPz1eDBg1Ss2bNUgUFBSohIUF5e3ur
+zZs3K6WU6tevn/rkk0+UUkpdvnxZ7d69Wyml1OLFi9WYMWNUXl6eKikpUfv3
+71fZ2dnVfmZQUJDatGlTtc8tXbpU2dnZqSVLlqiSkhL17rvvKl9fX1VWVqaU
+Umrw4MHq/fffN3sNoIYOHaouXLig8vPz1ZYtW5SXl5f68ccfVWFhoXrsscfU
+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
+f/8X3nqr4Wu94UD39/cnNTXVeP/MmTP4+fnd6NsKIYRVqNiHX9N4kOxsU8Cf
+Pq3nrW8MNxzocXFxvPPOO0yYMIG9e/fi7u4u/edCCFGBu7sO8cYK8nJ1BvoD
+DzzAtm3byMzMxN/fnxdeeIHiq5d0zZw5k1GjRrF+/XrCwsJwcnJi6dKljVux
+EEKIatUZ6CtXrqz1eYPBwKJFixqsICGEENfHoKo7q9kEvL29CQ4Ovq7XZmRk
+4OPj07AFWTE5HubkeJjIsTDXEo5HcnIymZmZ1T5nsUC/EbGxsezfv9/SZTQb
+J1RjBwAAIABJREFUcjzMyfEwkWNhrqUfDxtLFyCEEKJhSKALIUQLYfv8888/
+b+kirkfvisucCzkelcjxMJFjYa4lHw+r7EMXTev555/nxIkTLF++vFHePyoq
+ikWLFjFkyBCUUkydOpXVq1cTHh7Om2++yfTp0zl27FiDfmZKSgqRkZFkZ2dj
+K0vZixZCulwEACtWrCA2NhYXFxd8fX0ZOXIk33//fZN89qFDhxgyZAgA33//
+PZs2beLMmTPs27ePgQMHNkiYBwcHs3nzZuP9wMBAcnNzGy3MlVKEhoYSGRnZ
+KO8vRHUk0AVvvfUWjz/+OH/+8585d+4cKSkpPProo6xZs6bJazl9+jTBwcE4
+Ozs3+Wc3pO3bt3P+/HlOnjzJDz/80KSfXVJ5LljReigrs2HDBtWlSxfVuXNn
+9fLLL1u6HItKSUlRQ4YMUd26dVORkZFqwYIF9X6PrKws5ezsrP7973/XuM9f
+/vIXNXHiROP98ePHqw4dOig3Nzc1cOBAlZiYaHwuPj5eRUREKBcXF+Xn56de
+f/11pZRSGRkZavTo0crd3V15enqqAQMGqNLSUqWUUkFBQWrTpk3qgw8+UA4O
+DsrGxkY5Ozur5557Tn377beqU6dOZt/53nvvVd7e3qpdu3Zq9uzZSimlTpw4
+oW677TbVrl07ZWtrq/z8/NSlS5eUUkpNmjRJGQwG5ejoqJydndWrr76qTp06
+pQBVXFyslFIqLS1N3XXXXcrT01N17txZLVmyxOz733ffferBBx9ULi4uKjIy
+Uv3www+1HteHH35Y/f73v1f33nuvscZyiYmJaujQocrT01O1b99e/f3vf1dK
+KVVSUqL+/ve/q9DQUOXi4qJiYmJUSkpKlVqVUmrw4MHq/fffV0optXTpUnXL
+Lbeoxx9/XHl6eqpnnnlGnThxQg0cOFC1adNG2draKjc3N/Xf//631uNYWFio
+PD091cGDB437nTt3Tjk6Oqrz58/X+n2bu7feektFRkaqqKgoNWHCBFVQUGDp
+khqFVQV6SUmJCg0NVb/++qu6cuWK6tmzpzp06JCly7KY9PR09eOPPyqllMrJ
+yVHh4eH1Ph4bNmxQtra2ZmFRWeVA//DDD1VOTo4qLCxUc+bMUb169TI+17Fj
+R7V9+3allFIXL1401jd//nz1hz/8QRUVFamioiK1fft2VVZWppQyBbpSOpxu
+vfVW4/tVDPSSkhLVs2dP9fjjj6vc3FxVUFCgduzYoZRSKikpSX3zzTfq1Vdf
+Vffee69q166dmjNnjvF9Kn6GUqpKSA4aNEjNmjVLFRQUqISEBOXt7a02b95s
+/P4ODg4qPj5elZSUqPnz56u+ffvWeLzy8vKUq6urio+PV59//rny8vJSV65c
+UUrp/04dO3ZUb7zxhiooKFA5OTlqz549SimlXnvtNdW9e3d19OhRVVZWpg4c
+OKAyMzOvKdBtbW3V22+/rYqLi1V+fr5KSkpSQ4cOVe+++646f/68GjBggJo5
+c2adx3HWrFnqySefNH7OggUL1JgxY2r8rtbgzJkzKjg4WOXn5yullLrvvvvU
+0qVLLVtUI7GqQN+1a5caPny48f5LL72kXnrpJQtW1LzExcWpb775pl6vWb58
+uerQoUOt+1QO9IouXbqkAJWVlaWUUiogIEAtXrxYZWdnm+337LPPqri4OJWU
+lFTlPa410Hft2qW8vb1r/OWTmpqqbr/9drVlyxbVu3dvFR0dXe1nKGUe6Ckp
+KcrGxkbl5OQYn58/f76aMmWK8fvfcccdxucOHTqkHB0dq61BKaWWLVtmrLOw
+sFC5u7urL7/8Uiml1IoVK8zqqqhLly5q9erVVR6/lkAPCAgwe012drYKDg42
+/tL86quvjJ9b23Hcs2eP8vf3N/711Lt3b/XZZ5/V+F2twZkzZ5S/v7+6cOGC
+Ki4uVqNHjzb7a6Ulsao+9JoW0xD6cuCEhAT6Vjdhcy28vLzIzMy85n7X0tJS
+5s+fT+fOnXFzczNO31B+KfIXX3zB+vXrCQoKYvDgwezevRuAefPmERYWxvDh
+wwkNDeWVV16pV50AqampBAUFYWdXdQqi8+fP079/f3755RfuuusuDhw4UOPl
+0ZWlp6fTrl07XCssFR8UFGT2b6tjx47Gn52cnCgsLKzxmH388cfcf//92NnZ
+4eDgwNixY/n444+N36Fz5841fr+anqtLxf8vAPbv309OTg7Ozs7Y2tpy3333
+GReVqe049u3bF2dnZ7777juOHj3KiRMniIuLu66amotOnTrxxBNPEBgYiK+v
+L+7u7gwfPtzSZTUKqwp0VY/FNFqT3Nxcxo0bx4IFC3Cr52KH/fv3x9HRkdWr
+V1/T/itWrGDNmjVs3ryZ7Oxs4/KE5f9t+vTpw5o1azh//jz33HMP999/PwCu
+rq68+eabnDx5krVr1/LWW2+xZcuWetUaEBBASkpKtUE6adIkHB0dOXLkCPHx
+8URHR5v9e6nt34mfnx8XL17kcoWl41NSUujUqVO96gO9HsDWrVtZvnw5HTt2
+pGPHjnz++eesX7+ezMxMAgIC+PXXX2v8ftU9V36COD8/3/jY2bNnzfap/P0W
+LlzIpUuXWL16NaWlpYwYMYKcnBzj59R0HAGmTJnC8uXLWbZsGePHj8fR0fHa
+D0AzdOnSJdasWcOpU6dIT08nLy+v0YbgWppVBbosplFVcXEx48aNY+LEiYwd
+O7ber3d3d+evf/0rs2fPZvXq1eTn51NcXMyGDRt48sknq+x/+fJlHBwc8PLy
+Ij8/nz//+c/G54qKivj000/Jzs7G3t4eNzc347DAdevWceLECZRSxsfrO2Tw
+5ptvxtfXl/nz55OXl0dhYSE7d+4EdKszPT2dmJgY7rvvPhISErh48aLxtR06
+dODkyZPVvm9AQAC33HILTz/9NIWFhRw8eJAPP/yQiRMn1qs+gGXLltGlSxeO
+HTvGgQMHOHDgAMePH8ff35+VK1cyZswYzp49y4IFC7hy5QqXL182Lqo+ffp0
+nn32WZKSklBKcfDgQS5cuICPjw+dOnVi+fLllJaW8q9//avGXwrllFI4Oztz
+xx13kJaWxunTp43TXtd2HAEefPBBvvrqK5YvX17j4vDWZPPmzYSEhODj44O9
+vT1jx45l165dli6rUVhVoPfp04ekpCROnTpFUVERq1atsvo/B2+EUopp06YR
+ERHB3Llzr/t95s6dy1tvvcWLL76Ij48PAQEBvPPOO9xzzz1V9p08eTJBQUF0
+6tSJyMhI+vXrZ/b8smXLCA4Oxs3NjcWLFxtbQklJSQwdOhQXFxf69+/Po48+
+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
+AABJRU5ErkJggg==
+" /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">running time is 104.77880382537842 seconds</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">2</span><span style=" color:#00ff00;">]:</span> </p></body></html>
